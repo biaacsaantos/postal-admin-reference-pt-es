@@ -1,0 +1,22 @@
+# Raw data (large files, downloaded from the official sources)
+data/raw/*
+!data/raw/README.md
+
+# Intermediate files
+data/processed/*
+!data/processed/.gitkeep
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated outputs (can be large – add specific files manually if you want to publish them)
+outputs/*
+!outputs/.gitkeep

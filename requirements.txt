@@ -1,0 +1,11 @@
+geopandas>=1.0
+shapely>=2.0
+pyogrio
+pandas
+numpy
+topojson
+matplotlib
+jupyter
+sqlalchemy
+psycopg2-binary
+geoalchemy2
