@@ -12,19 +12,19 @@ The outputs are ready to use in **Power BI**: CSV tables for the data model (Pow
 
 ```mermaid
 flowchart LR
-    A[Eurostat GISCO<br/>NUTS | LAU | Postal codes] --> B[01 NUTS levels]
-    A --> C[02 Postal codes<br/>& localities]
-    D[DGT · CAOP 2024.1] --> E[03 Districts &<br/>municipalities]
+    A["Eurostat GISCO<br/>NUTS | LAU | Postal codes"] --> B["01 NUTS levels"]
+    A --> C["02 Postal codes<br/>& localities"]
+    D["DGT | CAOP 2024.1"] --> E["03 Districts &<br/>municipalities"]
     B --> C
-    B --> F[04 Mainland versions]
+    B --> F["04 Mainland versions"]
     C --> F
-    F --> G[05 Country subsets]
-    E --> S[06 Geometry<br/>simplification]
+    F --> G["05 Country subsets"]
+    E --> S["06 Geometry<br/>simplification"]
     G --> S
-    S --> H[07 Export]
-    H --> I[CSV | GeoJSON | TopoJSON<br/>full + simplified]
-    S --> Q[08 PostgreSQL + PostGIS]
-    Q --> R[(Database with<br/>keys, views and<br/>spatial indexes)]
+    S --> H["07 Export"]
+    H --> I["CSV | GeoJSON | TopoJSON<br/>full + simplified"]
+    S --> Q["08 PostgreSQL + PostGIS"]
+    Q --> R[("Database with<br/>keys, views and<br/>spatial indexes")]
 ```
 
 | Notebook | What it does |
