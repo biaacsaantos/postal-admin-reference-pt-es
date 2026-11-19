@@ -1,4 +1,4 @@
-# Postal & Administrative Reference – Portugal and Spain
+# Postal & Administrative Reference: Portugal and Spain
 
 A geospatial pipeline in Python that builds a consistent geographic reference for **Portugal and Spain**: postal codes, localities, districts, municipalities and NUTS 0–3 regions, with and without the archipelagos.
 
