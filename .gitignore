@@ -17,9 +17,10 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Generated outputs: only the simplified map files are published (the full-detail ones are too large)
+# Generated outputs: the CSV tables and the simplified map files are published (the full-detail map files are too large)
 outputs/**
 !outputs/**/
 !outputs/.gitkeep
 !outputs/geojson/**/*_simplified.geojson
 !outputs/topojson/**/*_simplified.json
+!outputs/csv/*.csv
