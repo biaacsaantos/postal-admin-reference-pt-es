@@ -73,7 +73,7 @@ All relationships are one-to-many: the arrow points from the foreign key (many) 
 ├── notebooks/        # 01 to 08, run in order
 ├── sql/              # DDL, constraints and Power BI views (PostgreSQL + PostGIS)
 ├── src/utils.py      # shared functions (centroids, spatial join, simplification, export)
-├── outputs/          # csv/, geojson/, topojson/
+├── outputs/          # geojson/ and topojson/ (simplified files included); csv/ created by the notebooks
 └── requirements.txt
 ```
 
@@ -94,6 +94,8 @@ All relationships are one-to-many: the arrow points from the foreign key (many) 
 **CSV** (`outputs/csv/`): postal codes, localities, NUTS 0–3, districts and municipalities.
 
 **GeoJSON / TopoJSON** (`outputs/geojson/`, `outputs/topojson/`), organised by territorial scope. Every polygon layer is available in two versions: full detail and simplified (suffix `_simplified`, recommended for Power BI).
+
+**The simplified GeoJSON and TopoJSON files are included in this repository**, ready to download and use in Power BI. The full-detail files and the CSV tables are not included because of their size: they are created by running the notebooks.
 
 | Subfolder | Content |
 |---|---|
