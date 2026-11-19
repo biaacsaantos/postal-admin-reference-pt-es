@@ -1,10 +1,10 @@
-# Postal & Administrative Reference – Portugal and Spain
+# Postal & Administrative Reference: Portugal and Spain
 
 A geospatial pipeline in Python that builds a consistent geographic reference for **Portugal and Spain**: postal codes, localities, districts, municipalities and NUTS 0–3 regions, with and without the archipelagos.
 
 The outputs are ready to use in **Power BI**: CSV tables for the data model (Power Query) and GeoJSON/TopoJSON files for the Shape Map and Deneb (Vega-Lite) visuals.
 
-**Tools:** Python · GeoPandas · Shapely · pandas · NumPy · TopoJSON · PostgreSQL + PostGIS (SQL) · Power BI
+**Tools:** Python | GeoPandas | Shapely | pandas | NumPy | TopoJSON | PostgreSQL + PostGIS (SQL) | Power BI
 
 ---
 
@@ -12,19 +12,19 @@ The outputs are ready to use in **Power BI**: CSV tables for the data model (Pow
 
 ```mermaid
 flowchart LR
-    A[Eurostat GISCO<br/>NUTS · LAU · Postal codes] --> B[01 NUTS levels]
-    A --> C[02 Postal codes<br/>& localities]
-    D[DGT · CAOP 2024.1] --> E[03 Districts &<br/>municipalities]
+    A["Eurostat GISCO<br/>NUTS | LAU | Postal codes"] --> B["01 NUTS levels"]
+    A --> C["02 Postal codes<br/>& localities"]
+    D["DGT | CAOP 2024.1"] --> E["03 Districts &<br/>municipalities"]
     B --> C
-    B --> F[04 Mainland versions]
+    B --> F["04 Mainland versions"]
     C --> F
-    F --> G[05 Country subsets]
-    E --> S[06 Geometry<br/>simplification]
+    F --> G["05 Country subsets"]
+    E --> S["06 Geometry<br/>simplification"]
     G --> S
-    S --> H[07 Export]
-    H --> I[CSV · GeoJSON · TopoJSON<br/>full + simplified]
-    S --> Q[08 PostgreSQL + PostGIS]
-    Q --> R[(Database with<br/>keys, views and<br/>spatial indexes)]
+    S --> H["07 Export"]
+    H --> I["CSV | GeoJSON | TopoJSON<br/>full + simplified"]
+    S --> Q["08 PostgreSQL + PostGIS"]
+    Q --> R[("Database with<br/>keys, views and<br/>spatial indexes")]
 ```
 
 | Notebook | What it does |
